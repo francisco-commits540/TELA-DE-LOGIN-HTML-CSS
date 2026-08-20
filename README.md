@@ -1,6 +1,6 @@
 # TELA-DE-LOGIN-HTML-CSS
-Testando HTML E CSS
+Praticando apredizado em desenvolvimento front-end em desenvolvimento web utilizando HTML e CSS.
 # AUTOR
 Francisco José
-# testando
-TESTE 
+# ATUALIZAÇÕES
+MELHOREI A FORMA DE ESTRUTURAÇÃO E COSTUME DE POSICIONAMENTO MAIS FIXO NA MENTE.

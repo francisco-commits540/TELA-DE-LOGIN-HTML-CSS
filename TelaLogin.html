@@ -1,0 +1,74 @@
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="TELA-LOGIN">
+            <form>
+                <h1>ACESSE SUA CONTA</h1>
+            <div class="CAMPO">
+                <label for="EMAIL">EMAIL:</label>
+                <input class="CAMPO-ENTRADA" id="EMAIL" type="email" />
+            </div>
+
+            <div class="CAMPO">
+                <label for="SENHA">SENHA:</label>
+                <input class="CAMPO-ENTRADA" type="password" id="SENHA" />
+            </div>
+
+                <button class="BOTAO-CONFIRMACAO" type="submit">ENTRAR</button>
+            </form>
+        </div>
+    </body>
+
+    <style>
+        body {
+            background: linear-gradient(to bottom, #02e1ca, #048679);
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            align-content: center;
+            color: azure;
+        }
+        .TELA-LOGIN {
+            display: flex;
+            flex-direction: column;
+            background: radial-gradient(circle, #4dd3ab, #1fbd90);
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+            height: 500px;
+            width: 400px;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .CAMPO {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            color: azure;
+        }
+
+        .CAMPO-ENTRADA {
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .BOTAO-CONFIRMACAO {
+            width: 300px;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 13px;
+            border: none;
+        }
+    </style>
+</html>
