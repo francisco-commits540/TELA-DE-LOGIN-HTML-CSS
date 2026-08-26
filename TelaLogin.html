@@ -4,71 +4,109 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
     </head>
+
+
     <body>
+        <h1 class="NOME-SITE">TEXUGO.COM</h1>
+
         <div class="TELA-LOGIN">
             <form>
-                <h1>ACESSE SUA CONTA</h1>
+                <h2>ACESSE SUA CONTA</h2>
             <div class="CAMPO">
-                <label for="EMAIL">EMAIL:</label>
-                <input class="CAMPO-ENTRADA" id="EMAIL" type="email" />
+                <input class="CAMPO-ENTRADA" type="email" id="EMAIL" placeholder = "EMAIL"/>
             </div>
 
             <div class="CAMPO">
-                <label for="SENHA">SENHA:</label>
-                <input class="CAMPO-ENTRADA" type="password" id="SENHA" />
+                <input class="CAMPO-ENTRADA" type="password" id="SENHA" placeholder = "SENHA"/>
             </div>
 
-                <button class="BOTAO-CONFIRMACAO" type="submit">ENTRAR</button>
             </form>
+                <button class="BOTAO-CONFIRMACAO" type="submit">ENTRAR</button>
+            
         </div>
     </body>
 
     <style>
-        body {
-            background: linear-gradient(to bottom, #02e1ca, #048679);
-            font-family: Arial, Helvetica, sans-serif;
+
+        @font-face {
+            font-family: "NEOGEN";
+            src: url("fontes/neogen/Neogen-Black.ttf");
+        }
+
+        @font-face {
+            font-family: "BEBAS-NEUE";
+            src: url("fontes/bebas_neue/BebasNeue-Regular.woff");
+        }
+        
+        form {
             display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        body {
+            background: linear-gradient(125deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
 
-        h1 {
-            align-content: center;
+        h2 {
+            text-align: center;
             color: azure;
+            font-family: "NEOGEN";
+            font-size: 30px;
         }
+
+        .NOME-SITE {
+            color:azure;
+            font-family: "NEOGEN";
+            font-size: 100px;
+            position:relative;
+            top: -90px;
+        }
+
         .TELA-LOGIN {
+            position:relative;
+            top: -60px;
             display: flex;
             flex-direction: column;
-            background: radial-gradient(circle, #4dd3ab, #1fbd90);
+            background-image: url(img/BACKGROUND\ CARD\ LOGIN.avif);
             border-radius: 15px;
             box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-            height: 500px;
+            height: 423px;
             width: 400px;
-            align-items: center;
-            gap: 20px;
         }
 
         .CAMPO {
             display: flex;
             flex-direction: column;
-            gap: 5px;
-            color: azure;
+            width: 300px;
         }
 
         .CAMPO-ENTRADA {
             border: none;
             outline: none;
             border-radius: 20px;
-            padding: 10px;
+            padding: 13px;
+            width: 300px;
+            box-sizing: border-box;
+            font-family: "BEBAS-NEUE";
         }
 
         .BOTAO-CONFIRMACAO {
-            width: 300px;
-            padding: 10px;
+            align-self: center;
+            width: 150px;
+            padding: 15px;
             margin: 20px;
-            border-radius: 13px;
+            border-radius: 25px;
             border: none;
+            font-family:"NEOGEN";
+            background: radial-gradient(circle,rgba(52, 218, 247, 1) 0%, rgba(52, 85, 247, 1) 100%);
+            color:azure;
         }
     </style>
 </html>
